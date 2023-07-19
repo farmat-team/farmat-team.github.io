@@ -37,8 +37,8 @@ a {
     position: absolute;
     left:50%;
     transform: translate(-50%);
-    width: 18px;
-    height: 126px;
+    width: 126px;
+    height: 18px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
