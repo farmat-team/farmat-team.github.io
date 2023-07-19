@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+  <!-- Materialize -->
+  <link rel="stylesheet" href="./css/materialize.min.css">
+
+  <!-- Theme's Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- Theme JS -->
+  <script src="./js/particles.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+  <!-- Title -->
+  <title>Farmat</title>
+
+  <!-- Icon -->
+  <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
+
+  <!-- Meta Info -->
+  <meta charset="UTF-8">
+  <meta name="author" content="Farmat">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="./js/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      let numberOfImages=5;
+      let random = Math.round(Math.random()*(numberOfImages-1))+1;
+      let imgPath=('./img/background1.jpg');
+      let nav_bar = '#000000';
+      $('body').css('background-image', ('url("' + imgPath + '")'));
+      $('#nav-box').css('background', (nav_bar));
+    });
+  </script>
+
+</head>
+
+<body bgcolor = '#000000'>
+<!-- Nav -->
+<div id="nav-box">
+  <div class="navbar-fixed">
+    <nav class="z-depth-0">
+      <div class="nav-wrapper">
+        <ul>
+          <li><a href="#"><span data-balloon="I'm on Discord - Farmat_inc" data-balloon-pos="down" style="z-index: 2;"><i class="fab fa-discord"></i></span></a></li>
+          <li><a href="https://steamcommunity.com/id/farmat_inc/"><span data-balloon="I'm on Steam" data-balloon-pos="down" style="z-index: 2;"><i class="fab fa-steam"></i></span></a></li>
+          <li><a href="https://t.me/farmat_inc"><span data-balloon="I'm on Telegram" data-balloon-pos="down" style="z-index: 2;"><i class="fab fa-telegram"></i></span></a></li>
+          <li><a href="./map.html"><span data-balloon="Site Map" data-balloon-pos="down" style="z-index: 2;"><i class="far fa-compass"></i></span></a></li>
+          <li><a href="https://neadaptar.ru"><span data-balloon="Source code taken from here" data-balloon-pos="down" style="z-index: 2;"><i class="fa fa-book"></i></span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+<!-- / Nav -->
+
+<!-- Nick -->
+<div class="nick">
+  <span data-balloon="My nickname" data-balloon-pos="up">Farmat</span>
+</div>
+<!-- / Nick -->
+
+<!-- Particles -->
+<div id="particles-js"></div>
+
+<script src="./js/particles-app.js"></script>
+<!-- / Particles -->
+</body>
+
+</html>
