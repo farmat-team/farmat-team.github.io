@@ -1,0 +1,16 @@
+.nav {
+    display: flex;
+    background-color: black;
+}
+.nav-list {
+    display: flex;
+}
+.map-list a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.map-list a:hover {
+    background-color: gray;
+}
