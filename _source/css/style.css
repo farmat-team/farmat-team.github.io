@@ -1,6 +1,5 @@
 body {
     background-color: black;
-    margin:0;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -20,17 +19,33 @@ canvas {
     position: absolute;
     top:50%;
     left:50%;
-    margin: 0;
     padding:20px;
     z-index:100;
     font-size: 80pt;
     font-weight: 900;
     color: white;
-    text-shadow: 0 0 16px #604161;
     transform: translate(-50%, -50%);
 }
 
 
+p {
+    color: white;
+}
+
+li {
+    color: white;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color:white;
+}
+
+td {
+    border: 1px solid white; color: white
+}
 
 #nav-box {
     position: absolute;
@@ -45,15 +60,10 @@ canvas {
     padding-top: 18px;
     z-index: 1;
     border-radius: 20px;
-    box-shadow: 1px 1px 35px rgba(255, 255, 255, 0.05);
 }
 
 nav {
     background-color: transparent;
-    -webkit-transition: background-color 0.5s ease-in-out;
-    -moz-transition: background-color 0.5s ease-in-out;
-    -ms-transition: background-color 0.5s ease-in-out;
-    -o-transition: background-color 0.5s ease-in-out;
     transition: background-color 0.5s ease-in-out;
 }
 
@@ -70,12 +80,10 @@ button[data-balloon] {
     filter: alpha(opacity=0);
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     -moz-opacity: 0;
-    -khtml-opacity: 0;
     opacity: 0;
     pointer-events: none;
     -webkit-transition: all 0.18s ease-out 0.18s;
     -moz-transition: all 0.18s ease-out 0.18s;
-    -ms-transition: all 0.18s ease-out 0.18s;
     -o-transition: all 0.18s ease-out 0.18s;
     transition: all 0.18s ease-out 0.18s;
     font-family: sans-serif !important;
@@ -99,12 +107,10 @@ button[data-balloon] {
     filter: alpha(opacity=0);
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     -moz-opacity: 0;
-    -khtml-opacity: 0;
     opacity: 0;
     pointer-events: none;
     -webkit-transition: all 0.18s ease-out 0.18s;
     -moz-transition: all 0.18s ease-out 0.18s;
-    -ms-transition: all 0.18s ease-out 0.18s;
     -o-transition: all 0.18s ease-out 0.18s;
     transition: all 0.18s ease-out 0.18s;
     content: '';
@@ -114,17 +120,13 @@ button[data-balloon] {
     filter: alpha(opacity=100);
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     -moz-opacity: 1;
-    -khtml-opacity: 1;
     opacity: 1;
     pointer-events: auto; }
-[data-balloon].font-awesome:after {
-    font-family: FontAwesome; }
 [data-balloon][data-balloon-break]:after {
     white-space: pre; }
 [data-balloon][data-balloon-blunt]:before, [data-balloon][data-balloon-blunt]:after {
     -webkit-transition: none;
     -moz-transition: none;
-    -ms-transition: none;
     -o-transition: none;
     transition: none; }
 [data-balloon][data-balloon-pos="up"]:after {
@@ -399,27 +401,3 @@ button[data-balloon] {
     white-space: normal;
     width: 100%; }
 /*Tooltips END*/
-
-
-
-p {
-    color: white;
-}
-
-li {
-    color: white;
-}
-
-h1 {
-    color: white;
-}
-h2 {
-    color: white;
-}
-h3 {
-    color: white;
-}
-
-td {
-    border: 1px solid white; color: white
-}
