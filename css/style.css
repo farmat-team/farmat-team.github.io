@@ -30,9 +30,7 @@ canvas {
     transform: translate(-50%, -50%);
 }
 
-a {
-    height: 58px;
-}
+
 
 #nav-box {
     position: absolute;
@@ -401,3 +399,27 @@ button[data-balloon] {
     white-space: normal;
     width: 100%; }
 /*Tooltips END*/
+
+
+
+p {
+    color: white;
+}
+
+li {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+h2 {
+    color: white;
+}
+h3 {
+    color: white;
+}
+
+td {
+    border: 1px solid white; color: white
+}
