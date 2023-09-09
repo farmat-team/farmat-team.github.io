@@ -41,7 +41,7 @@ var pJS = function(e, a) {
                 }
             },
             color: {
-                value: "#fff"
+                value: "#ffff"
             },
             shape: {
                 type: "circle",
