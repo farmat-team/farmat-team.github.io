@@ -7,6 +7,144 @@
     <title>Developer | Farmat</title>
 </head>
 <body>
-<p>There's nothing yet... Although there is a link to GitHub. On the other hand, the repository is private. https://github.com/Farmat-organization/FSFoundation</p>
+    <div class="overview">
+        <h2>Overview</h2>
+        <p class="overview_text">This is the base library for most of our programs. It allows you to speed up writing OOP code.</p>
+    </div>
+
+    <div class="install">
+        <h2>Install</h2>
+        <p>Enter the following command into the terminal in the root folder of the project:</p>
+
+        <div class="code_location">
+            <blockquote class="text"
+                        cite="http://www.inspireux.com/category/quotes/jesse-james-garrett/">
+                <p class="command">
+                    git submodule add
+                    https://github.com/Farmat-organization/FSFoundation.git
+            </blockquote>
+        </div>
+
+        <p>After that, in the Xcode project settings, find "Build Settings", enter "Header Search Paths" in the search field, add "FSFoundation/FSFoundation".<br>
+            Under "Build Phases" find "Link Binary With Libraries" and add "libFSFoundation.dylib"</p>
+    </div>
+
+    <div class="using">
+        <h2>Using</h2>
+        <div>
+            <p>Paste the code below to import the entire library</p>
+
+            <div class="code_location">
+                <blockquote class="text"
+                            cite="http://www.inspireux.com/category/quotes/jesse-james-garrett/">
+                    <p class="command">
+                        <span class="preprocessor">#include</span> <span class="stringsAndLibraries">&ltFSFoundation.hpp&gt</span><br>
+                        <br>
+                        <span class="classes">FSFile </span> MyFSFile;<br>
+                        <span class="classes">FSWeb  </span> MyFSWeb;<br>
+                        <span class="classes">FSArray</span> MyFSArray;<br>
+                    </p>
+                </blockquote>
+            </div>
+        </div>
+        <div>
+            <h3>FSFile</h3>
+            <p>To create a string for the user's folder address, use:</p>
+            <div class="code_location">
+                <blockquote class="text"
+                            cite="http://www.inspireux.com/category/quotes/jesse-james-garrett/">
+                    <p class="command">
+                        <span class="types">std</span>::<span class="types">string</span> Path =
+                        <span class="classes">MyFSFile</span>.<span class="classes">FSPrePath</span>();<br>
+                    </p>
+                </blockquote>
+            </div>
+
+            <p>Checking the presence of a file or folder at:</p>
+            <div class="code_location">
+                <blockquote class="text"
+                            cite="http://www.inspireux.com/category/quotes/jesse-james-garrett/">
+                    <p class="command">
+                        <span class="types">bool</span> IsThere =
+                        <span class="classes">MyFSFile</span>.<span class="classes">FSCheckFileOrFolderExists</span>(Path);<br>
+                    </p>
+                </blockquote>
+            </div>
+
+            <p>Creating a directory:</p>
+            <div class="code_location">
+                <blockquote class="text"
+                            cite="http://www.inspireux.com/category/quotes/jesse-james-garrett/">
+                    <p class="command">
+                        <span class="classes">MyFSFile</span>.<span class="classes">FSCreatingDir</span>(Path);<br>
+                    </p>
+                </blockquote>
+            </div>
+            <p>Creating a file:</p>
+            <div class="code_location">
+                <blockquote class="text"
+                            cite="http://www.inspireux.com/category/quotes/jesse-james-garrett/">
+                    <p class="command">
+                        <span class="classes">MyFSFile</span>.<span class="classes">FSCreatingFile</span>(Path);<br>
+                    </p>
+                </blockquote>
+            </div>
+        </div>
+
+        <div>
+            <h3>FSWeb</h3>
+            <p>Getting the current time in UTC:</p>
+            <div class="code_location">
+                <blockquote class="text"
+                            cite="http://www.inspireux.com/category/quotes/jesse-james-garrett/">
+                    <p class="command">
+                        <span class="types">std</span>::<span class="types">string</span> Time =
+                        <span class="classes">MyFSWeb</span>.<span class="classes">FSGetCurrentTimeUTC</span>();<br>
+                    </p>
+                </blockquote>
+            </div>
+        </div>
+
+        <div>
+            <h3>FSArray</h3>
+            <p>Sorting array:</p>
+            <div class="code_location">
+                <blockquote class="text"
+                            cite="http://www.inspireux.com/category/quotes/jesse-james-garrett/">
+                    <p class="command">
+                        <span class="keywords">int</span> Array[] = {<span class="numbers">5</span>,
+                        <span class="numbers">2</span>,
+                        <span class="numbers">8</span>,
+                        <span class="numbers">1</span>,
+                        <span class="numbers">9</span>};<br>
+                        <span class="keywords">int</span> Size = <span class="keywords">sizeof</span>(arr) / <span class="keywords">sizeof</span>(arr[0]); <br>
+
+                        <span class="keywords">bool</span> BigToSmall = <span class="keywords">true</span>;<br>
+                        <br>
+                        <span class="classes">MyFSWeb</span>.FSArraySort(Array, Size, BigToSmall);<br>
+
+                    </p>
+                </blockquote>
+            </div>
+            <p>Outputting an array to the console:</p>
+            <div class="code_location">
+                <blockquote class="text"
+                            cite="http://www.inspireux.com/category/quotes/jesse-james-garrett/">
+                    <p class="command">
+                        <span class="keywords">int</span> Array[] = {<span class="numbers">5</span>,
+                        <span class="numbers">2</span>,
+                        <span class="numbers">8</span>,
+                        <span class="numbers">1</span>,
+                        <span class="numbers">9</span>};<br>
+                        <span class="keywords">int</span> Size = <span class="keywords">sizeof</span>(arr) / <span class="keywords">sizeof</span>(arr[0]); <br>
+                        <br>
+                        <span class="classes">MyFSWeb</span>.FSArrayPrint(Array, Size);<br>
+
+                    </p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
